@@ -1,0 +1,23 @@
+# Exclude large data directory
+Data/
+
+# R specific
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Other temporary files
+*.log
+*.tmp
+SampleData/Regime2_ERL_only.txt
+SampleData/Regime6_New_only.txt
