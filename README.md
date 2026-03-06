@@ -1,7 +1,21 @@
-# RadiationClimQC
-## Quality Control (QC) for Global Solar Irradiance Data
+## Description
+This project introduces a data-driven approach to solar radiation quality control. 
+By leveraging iForest and a new climatic regime classification, we significantly 
+reduce both false alarms and missed detections in BSRN data...
 
-This repository contains the R implementation of advanced Quality Control (QC) algorithms for Baseline Surface Radiation Network (BSRN) measurements. A key innovation of this project is the development of a **new radiation climate classification**, derived through data-driven techniques, which allows for more precise and localized QC limit configurations. The project specifically compares the standard **ERL (extremely rare limits)** test with a **new improved QC method** designed to minimize false positives and false negatives across these distinct climatic regimes.
+# RadiationClimQC
+## Advanced Quality Control for Global Solar Irradiance Data
+
+This repository provides the R implementation of a state-of-the-art framework for the quality control of baseline solar radiation measurements. By combining a novel, data-driven radiation climate classification with the Isolation Forest (iForest) anomaly detection algorithm, this project offers a more robust and precise alternative to traditional QC methods.
+
+### Overview
+Quality Control (QC) is critical for ensuring the accuracy of climate datasets and solar energy assessments. Traditional QC tests, such as the standard "Extremely Rare Limits" (ERL) test, often suffer from high rates of false negatives (missed detections) in polluted or high-aerosol environments and false positives (false alarms) in clear-sky regions.
+
+**This project addresses these challenges through two primary innovations:**
+1.  **Data-Driven Radiation Climate Classification**: We derived a new classification system for 77 global BSRN stations, allowing for localized and regime-specific QC limit configurations.
+2.  **iForest Integration**: The iForest algorithm is utilized for multi-component anomaly detection, effectively identifying outliers that evade standard component-level tests.
+
+The result is a significantly more effective QC process that minimizes both type I and type II errors across diverse climatic regimes.
 
 ### Project Structure
 This repository contains the following files and directories (excluding the primary `Data/` folder which must be recreated):
