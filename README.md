@@ -4,9 +4,9 @@ By leveraging iForest and a new climatic regime classification, we significantly
 reduce both false alarms and missed detections in BSRN data...
 
 # RadiationClimQC
-## Advanced Quality Control for Global Solar Irradiance Data
+## Configuration of Climatological Limits for Global Solar Irradiance Data
 
-This repository provides the R implementation of a state-of-the-art framework for the quality control of baseline solar radiation measurements. By combining a novel, data-driven radiation climate classification with the Isolation Forest (iForest) anomaly detection algorithm, this project offers a more robust and precise alternative to traditional QC methods.
+This repository provides the R implementation of a state-of-the-art framework for the quality control of baseline solar radiation measurements. By combining a novel, data-driven radiation climate classification with the iForest anomaly detection algorithm, this project offers a more robust and precise alternative to traditional QC methods through the configuration of climatological limits.
 
 ### Overview
 Quality Control (QC) is critical for ensuring the accuracy of climate datasets and solar energy assessments. Traditional QC tests, such as the standard "Extremely Rare Limits" (ERL) test, often suffer from high rates of false negatives (missed detections) in polluted or high-aerosol environments and false positives (false alarms) in clear-sky regions.
@@ -54,7 +54,7 @@ The result is a significantly more effective QC process that minimizes both type
 
 ### Key Features
 - **iForest (Isolation Forest)**: Utilizes the iForest algorithm for anomaly detection to identify and isolate multi-component solar radiation outliers.
-- **Improved QC Limits**: Configuration and optimization of new ERL (Extreme Rate of Change) limits tailored to different climatic regimes.
+- **Improved QC Limits**: Configuration of climatological limits and optimization of new ERL (Extreme Rate of Change) limits tailored to different climatic regimes.
 - **Climatic Regime Segmentation**: Analysis tailored to different radiation regimes (Clear sky vs. Polluted/Aerosol-heavy).
 - **Visualization**: High-quality `ggplot2` plots for identifying physical inconsistencies in radiation data.
 
