@@ -1,6 +1,9 @@
 # Exclude large data directory
 Data/
 
+# Revision materials (local only)
+Revision1/
+
 # R specific
 .Rhistory
 .RData
